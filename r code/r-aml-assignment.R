@@ -1,7 +1,3 @@
-#Dzulaisar Dzulhikam
-#TP064415
-#AML ASSIGNMENT 2
-
 library(DataExplorer)
 library(dplyr)
 

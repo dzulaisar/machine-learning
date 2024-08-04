@@ -1,7 +1,3 @@
-#DZULAISAR BIN DZULHIKAM
-#TP064415
-#DSBA - CAPSTONE 2
-
 library(DataExplorer)
 library(dplyr)
 
