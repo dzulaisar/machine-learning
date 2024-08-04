@@ -1,0 +1,45 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+library(DataExplorer) #Automated data exploration process for analytic tasks and predictive modeling
+library(dplyr) #grammar of data manipulation
+```
+
+```{r}
+ds <- read.csv("C:/Users/User/Documents/MASTER APU/3RD SEM/CAPSTONE 2/heart_disease_uci.csv")
+```
+
+```{r}
+str(ds)
+dim(ds)
+```
+```{r}
+head(ds, n=10)
+```
+
+```{r}
+summary(ds)
+```
+```{r}
+plot_str(ds)
+```
+DATA EXPLORATION FOR HEART DISEASE DATASET
+
+```{r}
+config <- configure_report(
+          global_ggtheme = quote(theme_minimal(base_size=18))
+)
+create_report(ds, config=config)
+```
+
+
