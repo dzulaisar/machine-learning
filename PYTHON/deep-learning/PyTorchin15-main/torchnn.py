@@ -61,3 +61,4 @@ if __name__ == "__main__":
     img_tensor = ToTensor()(img).unsqueeze(0).to('cuda')
 
     print(torch.argmax(clf(img_tensor)))
+    
