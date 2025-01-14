@@ -1,1 +1,1 @@
-testing repository - aisar's playgroud
+testing repo - aisar's playgroud
